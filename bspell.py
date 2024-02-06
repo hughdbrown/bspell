@@ -161,7 +161,7 @@ def spell_check_file(filename: str, dictionary: set[str]):
                         new_word = input("Replacement word? ")
                         dictionary.add(new_word)
                         new_line = line.replace(word, new_word)
-                        se.replace_range((i, i), [new_line])
+                        se.replace_range((i, i + 1), [new_line])
                     elif response == 's':
                         # Skip the rest of the file
                         return
@@ -177,7 +177,7 @@ def load_dict(dict_filename: str) -> set[str]:
 def spell_check_files(dictionary: set[set]):
     """Spell-check file(s) against the dictionary."""
     logger.info(f"main: {len(dictionary)} words")
-    for filename in Path(".").rglob("*.py"):
+    for filename in Path(".").rglob("*"):
         spell_check_file(str(filename), dictionary)
 
 
