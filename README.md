@@ -34,4 +34,12 @@ Unfortunately, this is only temporary.
 The dictionary is taken from the standard location on a Mac. If that is no good for you, override the location and file name with the command line option.
 
 # Help
+```
+Usage: bspell.py [OPTIONS]
 
+  Main driver.
+
+Options:
+  -d, --dict_filename TEXT
+  --help                    Show this message and exit.
+```
