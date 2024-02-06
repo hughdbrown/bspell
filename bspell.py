@@ -189,7 +189,7 @@ def spell_check_files(dictionary: set[set]):
     type=str,
 )
 def main(dict_filename):
-    """Main driver."""
+    """Traverse down directory tree, opening all files, looking for words that do not appear in the dictionary."""
     dictionary: set[str] = load_dict(dict_filename)
     spell_check_files(dictionary)
 
