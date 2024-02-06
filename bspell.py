@@ -9,7 +9,6 @@ import click
 
 FORMAT = '%(asctime)s %(levelname)s %(message)s'
 logging_args = {
-logging_args = {
     "format": FORMAT,
     "level": logging.INFO,
     "datefmt": "%Y-%m-%d %H:%M:%S",
@@ -20,9 +19,8 @@ logger = logging.getLogger()
 
 SPLITTER = set(f" {punctuation}") - {'_'}
 
+# pylint: disable=logging-fstring-interpolation
 
-# pylint: disable=logging-fstring-interpolation
-# pylint: disable=logging-fstring-interpolation
 
 def delete_range(lines, r=None):
     """
