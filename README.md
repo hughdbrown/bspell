@@ -19,10 +19,15 @@ $ ./bspell.py
 
 You will be prompted for actions to apply to misspelled words it finds (i.e. words not in its dictionary). Possible responses are:
 1. y: Replace the misspelled word
+
 You will be prompted for the change.
+
 2. n: Do not replace the misspelled word
+
 3. a: Add the misspelled word to the in-memory dictionary
+
 Unfortunately, this is only temporary.
+
 4. s: Do not check any more words in the file
 
 # Dictionary
