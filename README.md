@@ -37,7 +37,8 @@ The dictionary is taken from the standard location on a Mac. If that is no good 
 ```
 Usage: bspell.py [OPTIONS]
 
-  Main driver.
+  Traverse down directory tree, opening all files, looking for words that do
+  not appear in the dictionary.
 
 Options:
   -d, --dict_filename TEXT
