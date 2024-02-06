@@ -25,3 +25,8 @@ You will be prompted for the change.
 Unfortunately, this is only temporary.
 4. s: Do not check any more words in the file
 
+# Dictionary
+The dictionary is taken from the standard location on a Mac. If that is no good for you, override the location and file name with the command line option.
+
+# Help
+
